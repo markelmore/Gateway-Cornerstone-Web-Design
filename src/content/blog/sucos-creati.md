@@ -2,12 +2,12 @@
 title: Sucos Creati
 url: sucos-creati
 description: Lorem markdownum Talia. Carinae equis.
-author: Code Stitch
+author: Gateway Cornerstone
 date: 2023-06-08T15:27:34.591Z
 tags:
     - post
-image: /assets/images/stl.jpg
-imageAlt: Kitchen
+image: /assets/images/stl-m.jpg
+imageAlt: St. Louis Skyline
 ---
 
 ## Hospes meus

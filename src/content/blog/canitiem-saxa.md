@@ -2,13 +2,13 @@
 title: Canitiem Saxa
 url: canitiem-saxa
 description: Lorem markdownum trabeati dicere deus.
-author: Code Stitch
+author: Gateway Cornerstone
 date: 2023-06-08T15:28:08.486Z
 tags:
     - post
     - featured
-image: /assets/images/stl.jpg
-imageAlt: Kitchen
+image: /assets/images/stl-m.jpg
+imageAlt: St. Louis Skyline
 ---
 
 ## Aut inter Petraeum
