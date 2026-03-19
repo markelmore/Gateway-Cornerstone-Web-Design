@@ -1,6 +1,6 @@
 ---
-title: "About | Gateway Cornerstone Web Design"
-description: "We are a premium web design agency based in St. Louis, MO specializing in custom designed and coded websites for small businesses across the U.S. Our mission is to help small businesses grow online with beautiful, high-performing websites that get results."
+title: "About — Veteran-Owned Web Design | Gateway Cornerstone Web Design | St. Louis, MO"
+description: "Meet Mark Elmore — 15+ years in IT, U.S. veteran, and founder of Gateway Cornerstone Web Design. Custom websites for small businesses & faith-based organizations.
 permalink: "/about/"
 ---
 
@@ -12,6 +12,13 @@ permalink: "/about/"
     <link rel="preload" as="image" href="{% getUrl "/assets/images/stl-m.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="preload" as="image" href="{% getUrl "/assets/images/stl-m.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
     <link rel="stylesheet" href="/assets/css/about.css">
+
+    <title>About — Veteran-Owned Web Design | Gateway Cornerstone Web Design | St. Louis, MO</title>
+    <meta name="description" content="Meet Mark Elmore — 15+ years in IT, U.S. veteran, and founder of Gateway Cornerstone Web Design. Custom websites for small businesses & faith-based organizations.">
+    <link rel="canonical" href="https://gatewaycornerstone.com/about/">
+
+    {% include "components/about-schema.html" %}
+    
 {% endblock %}
 
 {% block body %}

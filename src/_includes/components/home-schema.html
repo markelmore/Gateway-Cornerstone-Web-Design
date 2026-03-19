@@ -1,8 +1,22 @@
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "ProfessionalService"],
         "name": "{{ client.name }}",
+        "url": "https://gatewaycornerstone.com",
+        "logo": "https://gatewaycornerstone.com/assets/images/logo.png",
+        "description": "Veteran-owned custom web design agency based in the St. Louis, MO metro area. We hand-code fast, secure, beautiful websites for small businesses and faith-based organizations.",
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "United States"
+            },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 38.6270,
+            "longitude": -90.1994,
+            },
+        "openingHours": "Mo-Fr 09:00-17:00",
         {% if preloadImg %}"image": "{{ client.domain }}{{ preloadImg }}",{% endif %}
         {% if client.phoneFormatted %}"telephone": "{{ client.phoneFormatted }}",{% endif %}
         {% if client.email %}"email": "{{ client.email }}",{% endif %}
@@ -31,5 +45,36 @@
                     {% if not loop.first %},{% endif %}"{{ url }}"
                 {%- endfor -%}]
         {% endif %}
+        "founder": {
+            "@type": "Person",
+            "name": "Mark Elmore",
+            "jobTitle": "Owner & Lead Developer",
+            "description": "15+ years in IT, U.S. veteran, and founder of Gateway Cornerstone Web Design.",
+            "sameAs": "https://gatewaycornerstone.com/about/"},
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Web Design Services",
+            "itemListElement": [{
+                "@type": "Offer",
+                "name": "Monthly Web Design Plan",
+                "price": "150.00",
+                "priceCurrency": "USD",
+                "description": "Custom-coded 5-page website including hosting, unlimited edits, and 24/7 support.",
+                "billingIncrement": "month"},
+                {
+                    "@type": "Offer",
+                    "name": "Lump Sum Website Package",
+                    "price": "3500.00",
+                    "priceCurrency": "USD",
+                    "description": "Custom-coded 5-page website with $25/month hosting."
+                    },
+                {
+                    "@type": "Offer",
+                    "name": "E-Commerce Website",
+                    "price": "9000.00",
+                    "priceCurrency": "USD",
+                    "description": "Custom Shopify e-commerce store up to 15 pages with integrated shipping."
+                    }
+            }]
     }
 </script>
