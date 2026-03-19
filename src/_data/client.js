@@ -15,7 +15,7 @@ module.exports = {
     socials: {
         facebook: "https://www.facebook.com/people/Gateway-Cornerstone-Web-Design/61582680824948/",
         instagram: "https://www.instagram.com/",
-        googleBusiness: "",
+        googleBusiness: "https://share.google/B8VVF1RaMpfd0hcQI",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     domain: "https://www.gatewaycornerstone.com",
