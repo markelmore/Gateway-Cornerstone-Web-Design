@@ -1,6 +1,6 @@
 ---
-title: "Blog | Code Stitch Web Designs"
-description: "We are a premium web design agency based in St. Louis, MO specializing in custom designed and coded websites for small businesses across the U.S. Our mission is to help small businesses grow online with beautiful, high-performing websites that get results."
+title: "Blog | St. Louis, MO & Nationwide | Gateway Cornerstone Web Design"
+description: "Get a 100% custom-coded website for $150/month — no WordPress, no page builders. Veteran-owned St. Louis web design. Free consultation. 98–100 PageSpeed scores guaranteed."
 permalink: "/blog/"
 ---
 
@@ -8,11 +8,30 @@ permalink: "/blog/"
 
 {% block head %}
     <link rel="preload" as="image" href="{% getUrl "/assets/images/stl.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner-t.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="stylesheet" href="/assets/css/blog.css">
 {% endblock %}
 
 {% block body %}
   
+  <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-712">
+        <div class="cs-container">
+            <span class="cs-int-title"></span>
+        </div>
+    
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/banner-t.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/banner-t.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/banner-t.jpg" alt="St. Louis skyline reflection in Mississippi River" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
 
     <!-- ============================================ -->
     <!--                 Blog Listings                -->

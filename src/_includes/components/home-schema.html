@@ -23,27 +23,27 @@
         {% if client.address %}
             "address": {
                 "@type": "PostalAddress" {%- if client.address.lineOne -%},
-                    "streetAddress": "{{ client.address.lineOne }}{% if client.address.lineTwo %}, {{ client.address.lineTwo }}{% endif %}"
+                    "streetAddress": "{{ client.address.lineOne }}{% if client.address.lineTwo %}, {{ client.address.lineTwo }}{% endif %}",
                 {%- endif -%}
                 {%- if client.address.city -%},
-                    "addressLocality": "{{ client.address.city }}"
+                    "addressLocality": "{{ client.address.city }}",
                 {%- endif -%}
                 {%- if client.address.state -%},
-                    "addressRegion": "{{ client.address.state }}"
+                    "addressRegion": "{{ client.address.state }}",
                 {%- endif -%}
                 {%- if client.address.zip -%},
-                    "postalCode": "{{ client.address.zip }}"
+                    "postalCode": "{{ client.address.zip }}",
                 {%- endif -%}
                 {%- if client.address.country -%},
-                    "addressCountry": "{{ client.address.country }}"
+                    "addressCountry": "{{ client.address.country }}",
                 {%- endif -%}
             },
         {% endif %}
         {% if client.domain and page.url %}"url": "{{ client.domain }}{{ page.url }}",{% endif %}
         {% if client.socials %}
             "sameAs": [{%- for platform, url in client.socials -%}
-                    {% if not loop.first %},{% endif %}"{{ url }}"
-                {%- endfor -%}]
+                    {% if not loop.first %},{% endif %}"{{ url }}",
+                {%- endfor -%}],
         {% endif %}
         "founder": {
             "@type": "Person",
@@ -66,14 +66,14 @@
                 {
                     "@type": "Offer",
                     "name": "Lump Sum Website Package",
-                    "price": "3500.00",
+                    "price": "3000.00",
                     "priceCurrency": "USD",
                     "description": "Custom-coded 5-page website with $25/month hosting."
                 },
                 {
                     "@type": "Offer",
                     "name": "E-Commerce Website",
-                    "price": "9000.00",
+                    "price": "10000.00",
                     "priceCurrency": "USD",
                     "description": "Custom Shopify e-commerce store up to 15 pages with integrated shipping."
                 },
