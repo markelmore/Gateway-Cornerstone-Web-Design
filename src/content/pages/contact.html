@@ -59,9 +59,6 @@ permalink: "/contact/"
 
             <!--Social Buttons-->
             <div class="cs-social">
-                <!--<a class="cs-social-link" aria-label="visit google profile" href="">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
-                </a>-->
                 <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.socials.facebook }}" target="_blank">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
                 </a>
@@ -95,7 +92,8 @@ permalink: "/contact/"
                 Message
                 <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I’m interested in..."></textarea>
             </label>
-            <button class="cs-button-solid" type="submit">Submit Message Now</button>
+            <div data-netlify-recaptcha="true"></div>
+        <button class="cs-button-solid" type="submit">Submit Message Now</button>
         </form>
     </div>
 </section>
