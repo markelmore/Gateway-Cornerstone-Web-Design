@@ -1,6 +1,5 @@
 # Replace the "backend" object below with the snippet from DecapBridge. We need something here to get the CMS to work locally, but this alone won't work in production
 backend:
-    backend:
     name: git-gateway
     repo: markelmore/Gateway-Cornerstone-Web-Design
     branch: main
