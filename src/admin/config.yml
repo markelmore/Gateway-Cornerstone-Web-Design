@@ -33,7 +33,7 @@ logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 site_url: https://gatewaycornerstone.com
 
 # Keep this to allow you to edit the cms locally
-local_backend: true
+local_backend: false
 
 # Image folders
 media_folder: "src/assets/images/blog"
